@@ -1,41 +1,39 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
-
-# dependencies
-/node_modules
-/.pnp
-.pnp.*
-.yarn/*
-!.yarn/patches
-!.yarn/plugins
-!.yarn/releases
-!.yarn/versions
-
-# testing
-/coverage
-
-# next.js
-/.next/
-/out/
-
-# production
-/build
-
-# misc
+# Root-level ignores
+.env
+*.log
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.sqlite3
+*.db
 .DS_Store
-*.pem
 
-# debug
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-.pnpm-debug.log*
+# Ignore virtual environments
+venv/
+env/
+.venv/
 
-# env files (can opt-in for committing if needed)
-.env*
+# Ignore Docker artifacts
+*.pid
+*.sock
+*.swp
+docker-compose.override.yml
 
-# vercel
-.vercel
+# Ignore frontend build and dependencies
+/frontend/.next/
+/frontend/node_modules/
+/frontend/package-lock.json
+/frontend/.env.local
+/frontend/.env.development.local
+/frontend/.env.production.local
 
-# typescript
-*.tsbuildinfo
-next-env.d.ts
+# Ignore TypeScript build artifacts
+/frontend/next-env.d.ts
+/frontend/tsconfig.tsbuildinfo
+
+# Ignore IDE/editor settings
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace

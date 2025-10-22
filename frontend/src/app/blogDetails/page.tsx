@@ -1,4 +1,5 @@
-import Navbar from "@/components/Navbar"
+import Footer from "../../components/Footer"
+import Navbar from "../../components/Navbar"
 
 const BlogDetails = () => {
     return (
@@ -21,6 +22,8 @@ const BlogDetails = () => {
                     </section>
                 </div>
             </div>
+
+            <Footer/>
         </main>
     )
 }
